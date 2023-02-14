@@ -2,6 +2,8 @@
 // You should implement your task here.
 
 module.exports = function towelSort (matrix) {
+  if (!matrix) {
+    return []};
   let arr = [];
   matrix.forEach(function (item, i) {
     if (i % 2 !== 0){
@@ -9,7 +11,7 @@ module.exports = function towelSort (matrix) {
    }
     arr = matrix.flat(Infinity);
   })
-  return(arr);
+  return arr;
   }
 
 /* один массив из нескольких в порядке возрастания
